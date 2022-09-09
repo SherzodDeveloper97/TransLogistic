@@ -2,7 +2,7 @@
 
 window.addEventListener('scroll', function () {
     var headerContent = document.querySelector(".header-top");
-    headerContent.classList.toggle("sticky", window.scrollY > 0);
+    headerContent.classList.toggle("sticky", window.scrollY > 650);
 })
 
 /* navbar sticky - close */

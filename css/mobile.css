@@ -209,6 +209,10 @@
         font-size: 85px;
         line-height: 80px;
     }
+    .company-name--amp{
+        font-size: 145px;
+        top: 20%;
+    }
     .services-items::after{
         font-size: 68px;
         bottom: 0;
@@ -279,6 +283,9 @@
         font-size: 80px;
         line-height: 75px;
     }
+    .company-name--amp{
+        font-size: 140px;
+    }
     .services-items{
         padding: 10px 20px 94px 20px;
     }
@@ -316,6 +323,10 @@
     .company-name{
         font-size: 70px;
         line-height: 75px;
+    }
+    .company-name--amp{
+        font-size: 130px;
+        top: 15%;
     }
     .services-items::after{
         font-size: 58px;
