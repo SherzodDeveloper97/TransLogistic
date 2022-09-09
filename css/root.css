@@ -1,0 +1,11 @@
+:root{
+    --colorBlue:#033FC9;
+    --colorBlueLight:#004AF2;
+    --gradient:linear-gradient(90deg, #FF903E 0%, #FF2C2C 100%);
+    --colorDark:#2C2C2C;
+    --colorGrey:#585858;
+    --colorRed:#FF3E2F;
+    --colorGrey2:#464646;
+    --colorGrey3:#6E6E6E;
+    --colorRGBA:rgba(0, 0, 0, 0.05);
+}

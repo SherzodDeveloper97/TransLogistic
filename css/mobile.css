@@ -1,0 +1,402 @@
+@media screen and (max-width:1215px) {
+    .header-slider--block{
+        left: 8px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .footer{
+        background-image: none;
+        background: #f2f2f2;
+    }
+    .team-card:hover .team-img{
+        transform: unset;
+        -webkit-transform: unset;
+        -moz-transform: unset;
+        -ms-transform: unset;
+        -o-transform: unset;
+    }
+}
+@media screen and (max-width:1068px) {
+    #clients{
+        background-image: none;
+    }
+    .client-btn{
+        color: #fff;
+        background-image: var(--gradient);
+        padding: 2% 5%;
+    }
+    .client-btn:not(:last-child){
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width:1067px){
+
+}
+@media screen and (max-width:1007px) {
+    .benefits-items{
+        padding-top: 50px;
+        margin-bottom: 45px;
+    }
+    .benefits-item{
+        width: 100%;
+        max-width: 100%;
+    }
+    .benefits-right,.benefits-img{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:992px) {
+    .services-items::after{
+        font-size: 70px;
+        bottom: 0;
+    }
+    .services-items{
+        padding: 10px 20px 94px 20px;
+    }
+    .clients-slider{
+        width: 100%;
+        margin: auto;
+    }
+    .clients-right{
+        transform: unset;
+        -webkit-transform: unset;
+        -moz-transform: unset;
+        -ms-transform: unset;
+        -o-transform: unset;
+    }
+    .clients-slider--item{
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+       
+        /* transform: translateX(3%);
+        -webkit-transform:translateX(3%);
+        -moz-transform:translateX(3%);
+        -ms-transform:translateX(3%);
+        -o-transform:translateX(3%); */
+}
+    .client-title{
+        justify-content: center;
+    }
+    .client-buttons{
+        margin-top: 66px;
+    }
+    .wrap-content{
+        padding: 60px 100px;
+    }
+    
+}
+@media screen and (max-width:888px) {
+    .header-top{
+        background-color: #000;
+    }
+    .header-top-inner{
+        height: 50px;
+    }
+    .nav-menu{
+        position: fixed;
+        top: -100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #262626;
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        z-index: 998;
+        transform: translateY(-70px);
+        -webkit-transform: translateY(-70px);
+        -moz-transform: translateY(-70px);
+        -ms-transform: translateY(-70px);
+        -o-transform: translateY(-70px);
+}
+    .nav-menu.active{
+        top: 0;
+        transform: translateY(50px);
+        -webkit-transform: translateY(50px);
+        -moz-transform: translateY(50px);
+        -ms-transform: translateY(50px);
+        -o-transform: translateY(50px);
+        z-index: 997;
+}
+    .burger{
+        display: block;
+        z-index: 999;
+    }
+    .menu-list{
+        margin-top: 9px;
+        flex-direction: column;
+    }
+    .menu-item:not(:last-child){
+        margin-right: 0;
+    }
+    .menu-link{
+        padding: 17px 15px;
+        width: 100%;
+        text-align: right;
+    }
+    #first{
+        background-color: var(--colorBlueLight);
+
+    }
+    .header-slider--block{
+        left: 50%;
+        bottom: -481px;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        width: 80%;
+    }
+    .header-slider--left{
+        width: 100%;
+        bottom: 0;
+    }
+    .header--form{
+        max-width: 100%;
+    }
+    .slider-control{
+        left: 40%;
+        bottom: 112%;
+    }
+    #services{
+        padding-top: 390px;
+    }
+    .wrap-content{
+        padding: 50px 80px;
+    }
+}
+@media screen and (max-width:800px) {
+    /* .header-slider--left{
+        width: 80%;
+        left: 50%;
+        right: 0;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+}
+    .header--form{
+        max-width: 100%;
+    }
+    .header-slider--right{
+        display: none;
+    } */
+}
+
+@media screen and (max-width:768px) {
+    .slider-control{
+        left: 5%;
+        bottom: 112%;
+    }
+    .header-slider--items{
+        transform: translateY(132px);
+        -webkit-transform: translateY(132px);
+        -moz-transform: translateY(132px);
+        -ms-transform: translateY(132px);
+        -o-transform: translateY(132px);
+}
+    .company-state{
+        font-size: 14px;
+    }
+    .company-name{
+        font-size: 85px;
+        line-height: 80px;
+    }
+    .services-items::after{
+        font-size: 68px;
+        bottom: 0;
+    }
+    .benefits-block{
+        row-gap: 0;
+    }
+    .benefits-left{
+        padding-left: 15px;
+    }
+    .benefits-left::before{
+        display: none;
+    }
+    .wrap-title{
+        font-size: 28px;
+    }
+    .wrap-text--after{
+        width: 100%;
+        text-align: center;
+        font-size: 70px;
+        top: -70px;
+    }
+    .news-item--subtitle{
+        max-width: 100%;
+    }
+}
+@media screen and (max-width:767px) {
+    .team-image--block{
+        height: auto;
+    }
+    
+}
+@media screen and (max-width:637px) {
+    .benefits-items{
+        padding-top: 10px;
+        margin-bottom: 30px;
+    }
+    .wrap-content{
+        padding: 40px 60px;
+    }
+    .wrap-title{
+        font-size: 26px;
+    }
+    .wrap-subtitle{
+        font-size: 17px;
+    }
+    .scroll-to-top .gotobtn .arrow_up{
+        width: 30px;
+        height: 30px;
+    }
+    
+}
+@media screen and (max-width:576px) {
+    .header-slider--left{
+        width: 100%;
+    }
+    .header-slider--items{
+        transform: translateY(140px);
+        -webkit-transform: translateY(140px);
+        -moz-transform: translateY(140px);
+        -ms-transform: translateY(140px);
+        -o-transform: translateY(140px);
+    }
+    .company-state{
+        font-size: 14px;
+    }
+    .company-name{
+        font-size: 80px;
+        line-height: 75px;
+    }
+    .services-items{
+        padding: 10px 20px 94px 20px;
+    }
+    #wrap{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .btn-sm-size{
+        font-size: 16px;
+    }
+    .wrap-text--after{
+        font-size: 60px;
+        top: -68px;
+    }
+    .footer-logo{
+        margin-bottom: 30px;
+    }
+    .footer-list{
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (max-width:529px){
+    .header-slider--block{
+        width: 90%;
+        bottom: -517px;
+    }
+    .slider-control{
+        left: 0;
+        bottom: 116%;
+    }
+    .company-state{
+        font-size: 13px;
+    }
+    .company-name{
+        font-size: 70px;
+        line-height: 75px;
+    }
+    .services-items::after{
+        font-size: 58px;
+    }
+}
+@media screen and (max-width:458px){
+    .wrap-content{
+        padding: 40px;
+    }
+    .wrap-title{
+        font-size: 25px;
+        line-height: 32px;
+    }
+    .wrap-subtitle{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .wrap-border{
+        width: 80%;
+    }
+    .wrap-text--after{
+        font-size: 50px;
+        top: -65px;
+    }
+}
+@media screen and (max-width:384px) {
+    .benefits-left{
+        margin-bottom: 0;
+    }
+    .benefits-title{
+        font-size: 17px;
+        margin-bottom: 4px;
+    }   
+    .benefits-subtitle{
+        font-size: 13px;
+    }
+    .benefits-item:not(:last-child){
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width:374px){
+    .client-buttons{
+        margin-top: 50px;
+    }
+    .client-btn:not(:last-child){
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .client-buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width:354px){
+    .wrap-text--after{
+        font-size: 40px;
+        top: -64px;
+    }
+}
+@media screen and (max-width:341px){
+    .benefits-title{
+        font-size: 17px;
+        margin-bottom: 4px;
+    }   
+    .benefits-subtitle{
+        font-size: 13px;
+    }
+    .benefits-item:not(:last-child){
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:324px){
+    .slider-control{
+        left: 86%;
+        bottom: 148%;
+    }
+    .services-items::after{
+        font-size: 50px;
+        bottom: 0;
+    }
+    
+    
+}
