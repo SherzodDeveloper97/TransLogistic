@@ -171,6 +171,12 @@
         padding: 50px 80px;
     }
 }
+@media screen and (max-width:878px) {
+    .header-slider--left{
+        bottom: -10px;
+    }
+    
+}
 @media screen and (max-width:800px) {
     /* .header-slider--left{
         width: 80%;
@@ -313,6 +319,9 @@
         width: 90%;
         bottom: -517px;
     }
+    .header-slider--left{
+        bottom: 14px;
+    }
     .slider-control{
         left: 0;
         bottom: 116%;
@@ -400,9 +409,15 @@
     }
 }
 @media screen and (max-width:324px){
+    .header-slider--left{
+        bottom: -6px;
+    }
     .slider-control{
         left: 86%;
         bottom: 148%;
+    }
+    #services{
+        padding-top: 420px;
     }
     .services-items::after{
         font-size: 50px;

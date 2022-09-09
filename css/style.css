@@ -144,11 +144,19 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.25);
     background: transparent;
     padding: 11px 11px 11px 46px;
-    outline: none; 
+    outline: none;
     width: 100%;
     color: #fff;
     font-size: 16px;
     font-weight: 400;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+.header--form-content input:focus{
+    border-bottom-color: rgba(255, 255, 255, 0.6);
 }
 .header--form-content input::placeholder{
     font-family: 'PT Sans';
@@ -339,9 +347,7 @@
 
 /* CLIENTS */
 #clients{
-    background-image: url('../images/map.png');
-    background-repeat: no-repeat;
-    background-position: -16px 98px;
+    
 }
 #clients .title{
 
@@ -361,6 +367,11 @@
     margin-top: 56px;
     /* width: 100%; */
     row-gap: 45px;
+}
+.clients-brand{
+    background-image: url('../images/map.png');
+    background-repeat: no-repeat;
+    /* background-position: -16px 98px; */
 }
 .clients-brand--items{
     row-gap: 40px;
@@ -524,18 +535,40 @@
     row-gap: 50px;
 }
 .benefits-left{
-    position: relative;
-    padding-left: 57px;
+    
 }
-.benefits-left::before{
-    content: '';
+.benefits-items{
+    padding-left: 57px;
+    position: relative;
+    background-image: linear-gradient(to bottom, #fff 40%, #A5A5A5 40%);
+    background-repeat: repeat-y;
+    background-size: 2px 35px;
+
+}
+.benefits-items::before,.benefits-items::after{
+    content: "";
+    position: absolute;
+    left: -12px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 36px;
+}
+.benefits-items::before{
+    /* content: '';
     position: absolute;
     left: 0;
     top: 0;
     background-image: url('../images/map-line.png');
     background-repeat: no-repeat;
     width: 32px;
-    height: 440px;
+    height: 440px; */
+    top: 0px;
+    background-image: url('../images/location-start.svg');
+}
+.benefits-items::after{
+    background-image: url('../images/location-end.svg');
+    bottom: 0px;
 }
 .benefits-item{
     max-width: 315px;
