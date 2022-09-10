@@ -42,13 +42,6 @@ menuBtn.addEventListener('click', () => {
 
 // Slick slider
 
-// $('.header-slider--items').slick({
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     prevArrow: '.slider-prev',
-//     nextArrow: '.slider-next',
-//     // autoplay: true,
-// });
 
 $('.clients-slider').slick({
     slidesToShow: 1,
