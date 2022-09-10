@@ -546,12 +546,12 @@
     background-image: linear-gradient(to bottom, #fff 40%, #A5A5A5 40%);
     background-repeat: repeat-y;
     background-size: 2px 35px;
-
+    background-position: left 12px top -2px;
 }
 .benefits-items::before,.benefits-items::after{
     content: "";
     position: absolute;
-    left: -12px;
+    left: 0px;
     background-color: transparent;
     background-repeat: no-repeat;
     width: 26px;
@@ -566,12 +566,12 @@
     background-repeat: no-repeat;
     width: 32px;
     height: 440px; */
-    top: 0px;
+    top: -27px;
     background-image: url('../images/location-start.svg');
 }
 .benefits-items::after{
     background-image: url('../images/location-end.svg');
-    bottom: 0px;
+    bottom: -38px;
 }
 .benefits-item{
     max-width: 315px;
@@ -759,8 +759,10 @@
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     text-transform: uppercase;
-    width: 602px;
+    width: 100%;
     z-index: 2;
+    display: inline-block;
+    text-align: center;
 }
 
 /* NEWS */

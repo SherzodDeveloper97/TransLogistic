@@ -5,7 +5,7 @@
 }
 @media screen and (max-width:1200px) {
     .benefits-left{
-        margin-left: 15px;
+        /* margin-left: 15px; */
     }
     .benefits-items::before,.benefits-items::after{
         
@@ -44,6 +44,17 @@
     }
     
 }
+@media screen and (max-width:1017px) {
+    .benefits-left{
+        margin-bottom: 20px;
+    }
+    .benefits-right{
+        width: 100%;
+    }
+    .benefits-img{
+        width: 100%;
+    }
+}
 @media screen and (max-width:1007px) {
     .benefits-items{
         /* padding-top: 50px; */
@@ -52,6 +63,9 @@
     .benefits-item{
         width: 100%;
         max-width: 100%;
+    }
+    .benefits-item:not(:last-child){
+        margin-bottom: 28px;
     }
     .benefits-right,.benefits-img{
         width: 100%;
@@ -248,10 +262,16 @@
         row-gap: 0;
     }
     .benefits-left{
-        padding-left: 22px;
+        /* padding-left: 22px; */
     }
     .benefits-left::before{
         display: none;
+    }
+    .benefits-item:not(:last-child){
+        margin-bottom: 24px;
+    }
+    .benefits-title{
+        margin-bottom: 15px;
     }
     .wrap-title{
         font-size: 28px;
@@ -289,6 +309,12 @@
     .scroll-to-top .gotobtn .arrow_up{
         width: 30px;
         height: 30px;
+    }
+    
+}
+@media screen and (max-width:610px) {
+    .benefits-title{
+        margin-bottom: 12px;
     }
     
 }
@@ -387,7 +413,7 @@
 }
 @media screen and (max-width:384px) {
     .benefits-left{
-        margin-bottom: 0;
+        /* margin-bottom: 0; */
     }
     .benefits-title{
         font-size: 17px;
@@ -397,7 +423,7 @@
         font-size: 13px;
     }
     .benefits-item:not(:last-child){
-        margin-bottom: 30px;
+        margin-bottom: 22px;
     }
 }
 @media screen and (max-width:374px){
