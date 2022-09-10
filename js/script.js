@@ -66,3 +66,23 @@ window.addEventListener("scroll", () => {
 })
 
 /* scroll-to-top button - end */
+
+
+
+/* Modal - open */
+
+if(document.querySelector('.modal__btn')){
+    const modalBtn = document.querySelectorAll('.modal__btn');
+    const modalWindow = document.getElementById('becomeClientModal');
+
+    // modalBtn.addEventListener('click', () => {
+    //     modalWindow.classList.add("show");
+    // });
+    modalBtn.foreach(d => {d.addEventListener('click', () =>{
+        modalWindow.classList.add("show")
+
+    }
+    )})
+}
+
+/* Modal - close */
