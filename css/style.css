@@ -538,7 +538,7 @@
     
 }
 .benefits-items{
-    padding-left: 57px;
+    padding-left: 40px;
     position: relative;
     background-image: linear-gradient(to bottom, #fff 40%, #A5A5A5 40%);
     background-repeat: repeat-y;
@@ -821,9 +821,11 @@
 .footer{
     padding-top: 41px;
     padding-bottom: 19px;
-    background-image: url('../images/footer-bg.png');
+    /* background-image: url('../images/footer-bg.png'); */
+    background-image: url('../images/tire-left.svg'),url("../images/tire-right.svg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: left -30px bottom -5px, right -30px bottom -5px;
+    background-color: #F9F9F9;
 }
 .footer-logo{
     margin-bottom: 40px;
