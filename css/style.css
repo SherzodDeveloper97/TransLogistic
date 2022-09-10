@@ -903,7 +903,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* display: none; */
+    display: none;
+}
+.modal-content.show{
+    display: flex;
 }
 .modal__inner {
     width: 400px;
@@ -912,7 +915,7 @@
     position: relative;
 }
 .modal__header {
-    margin-top: 25px;
+    margin-top: 5px;
     text-align: center;
 }
 .modal__title {
@@ -960,16 +963,16 @@
 }
 #modal__form .btn-form{
     margin-top: 25px;
-    margin-bottom: 25px;
 }
 .modal__line{
     width: 100%;
     height: 1px;
     background-color: #E8E8E8;
+    margin-top: 23px;
+    margin-bottom: 23px;
 }
 .modal-contacts {
     text-align: center;
-    margin-top: 23px;
 }
 .modal-contacts--title {
     margin-bottom: 7px;
@@ -1012,4 +1015,11 @@
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
+}
+.modal__close img{
+    display: block;
+}
+.thankModal__icon{
+    display: inline-block;
+    margin-bottom: 12px;
 }

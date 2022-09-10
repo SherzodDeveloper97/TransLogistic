@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/mobile.css" />
   </head>
-  <body class="no-scroll">
+  <body>
     <!-- HEADER -->
     <header class="header">
       <div class="header-top">
@@ -579,7 +579,7 @@
     <!-- /SECTION -->
 
     <!-- MODAL -->
-    <div class="modal-content">
+    <div class="modal-content " id="becomeClientModal">
       <div class="modal__inner">
         <div class="modal__header">
           <h4 class="modal__title">Need to deliver your cargo? We can help!</h4>
@@ -595,6 +595,42 @@
             Call me back
           </button>
         </form>
+        <div class="modal__line"></div>
+        <div class="modal-contacts">
+            <h4 class="modal-contacts--title">Our contacts</h4>
+            <ul class="modal-list">
+                <li class="modal-list--item">
+                    <a href="#">
+                        Toshkent. Labzak
+                    </a>
+                </li>
+                <li class="modal-list--item">
+                    <a href="tel:+998-97-725-10-27">
+                        Phone: +998977251027
+                    </a>
+                </li>
+                <li class="modal-list--item">
+                    <a href="mailto:info@herosson.uz">
+                        E-mail: info@herosson.uz
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <button type="button" class="modal__close">
+            <img src="./images/close.svg" alt="close svg">
+        </button>
+      </div>
+    </div>
+
+    <div class="modal-content " id="thanksModal">
+      <div class="modal__inner">
+        <div class="modal__header">
+          <img src="./images/thank-icon.svg" class="thankModal__icon" alt="thank-icon">
+          <h4 class="modal__title">Thanks for your request</h4>
+          <div class="modal__text">
+            We call you back as soon as possible!
+          </div>
+        </div>
         <div class="modal__line"></div>
         <div class="modal-contacts">
             <h4 class="modal-contacts--title">Our contacts</h4>
