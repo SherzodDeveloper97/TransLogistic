@@ -12,7 +12,7 @@ window.addEventListener('scroll', function () {
 
 /* humburger menu - JS open*/
 const burger = document.querySelector('.burger');
-const navMain = document.querySelector('.nav-menu');
+const navMain = document.getElementById('nav-menu--mobile');
 const nav = document.querySelector('nav');
 
 burger.addEventListener('click', () => {

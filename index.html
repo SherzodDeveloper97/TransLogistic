@@ -1,80 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trans Logistic</title>
 
-    <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="./images/favicon.svg" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trans Logistic</title>
 
-    <!-- Fonts -->
-    <link rel="stylesheet" href="fonts/Lato/stylesheet.css" />
-    <link rel="stylesheet" href="fonts/PT Sans/stylesheet.css" />
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="./images/favicon.svg" />
 
-    <!-- slick - CDN -->
-    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
-    <link rel="stylesheet" href="libs/slick-1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="libs/slick-1.8.1/slick/slick-theme.css" />
+  <!-- Fonts -->
+  <link rel="stylesheet" href="fonts/Lato/stylesheet.css" />
+  <link rel="stylesheet" href="fonts/PT Sans/stylesheet.css" />
 
-    <!-- bootstrap -->
-    <link
-      rel="stylesheet"
-      href="libs/bootstrap-5.2.0-dist/css/bootstrap.min.css"
-    />
+  <!-- slick - CDN -->
+  <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+  <link rel="stylesheet" href="libs/slick-1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="libs/slick-1.8.1/slick/slick-theme.css" />
 
-    <!-- CSS - Style -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/mobile.css" />
-  </head>
-  <body>
-    <!-- HEADER -->
-    <header class="header">
-      <div class="header-top">
-        <div class="container">
-          <div
-            class="header-top-inner d-flex align-items-center justify-content-between"
-          >
-            <div class="logo d-flex align-items-center">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="libs/bootstrap-5.2.0-dist/css/bootstrap.min.css" />
+
+  <!-- CSS - Style -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/mobile.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <div class="header-top-inner d-flex align-items-center justify-content-between">
+          <div class="logo d-flex justify-content-between">
+            <div class="logo-item d-flex align-items-center">
               <a href="./index.html" class="logo__link">
-                <img
-                  src="./images/logo.svg"
-                  alt="logo-icon"
-                  class="logo__img"
-                />
+                <img src="./images/logo.svg" alt="logo-icon" class="logo__img" />
               </a>
               <p class="logo-text text-white">CenterLogistic</p>
-            </div>
-            <div class="nav-menu">
-              <div class="menu">
-                <ul class="menu-list d-flex">
-                  <li class="menu-item">
-                    <a href="#services" class="menu-link text-white" id="first"
-                      >Services</a
-                    >
-                  </li>
-                  <li class="menu-item">
-                    <a href="#clients" class="menu-link text-white">Clients</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#benefits" class="menu-link text-white"
-                      >Benefits</a
-                    >
-                  </li>
-                  <li class="menu-item">
-                    <a href="#team" class="menu-link text-white">Team</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#news" class="menu-link text-white">News</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#contacs" class="menu-link text-white"
-                      >Contact Us</a
-                    >
-                  </li>
-                </ul>
-              </div>
             </div>
             <div class="burger">
               <span class="line_0"></span>
@@ -83,54 +47,98 @@
               <span class="line_3"></span>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="header-slider">
-        <div class="container">
-          <div class="header-slider--block">
-            <div class="header-slider--left">
-              <div class="header--form">
-                <div class="header--form-top">
-                  <h3 class="header--form-title text-white">Get Callback</h3>
-                  <p class="header--form-subtitle text-white">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                    diam nonumy eirmod tempor invidunt ut
-                  </p>
-                </div>
-                <form
-                  action="handler.php"
-                  method="post"
-                  class="header--form-content"
-                >
-                  <input type="text" name="your-name" placeholder="Your name" />
-                  <input type="tel" name="phone" placeholder="Your phone" />
-                  <input type="email" name="email" placeholder="Your e-mail" />
-                  <button type="submit" class="btn-form btn-sm-size text-white">
-                    Call me back
-                  </button>
-                </form>
-              </div>
-            </div>
-            <div class="slider-control">
-              <a class="slider-prev"
-                ><img src="./images/prev-icon.svg" alt="icon"
-              /></a>
-              <a class="slider-next"
-                ><img src="./images/next-icon.svg" alt="icon"
-              /></a>
+          <div class="nav-menu" id="nav-menu--desktop">
+            <div class="menu">
+              <ul class="menu-list d-flex">
+                <li class="menu-item">
+                  <a href="#services" class="menu-link text-white" id="first">Services</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#clients" class="menu-link text-white">Clients</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#benefits" class="menu-link text-white">Benefits</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#team" class="menu-link text-white">Team</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#news" class="menu-link text-white">News</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#contacs" class="menu-link text-white">Contact Us</a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="header-slider--items">
-            <div class="header-slider--item header-slider--right">
-              <p class="company-state text-white">USA, Europe, Asia</p>
-              <h1 class="company-name">
-                <span class="company-name--amp">&amp;</span>
-                Trans<br />
-                Logistic
-              </h1>
-            </div>
+          
+        </div>
+      </div>
+    </div>
 
-            <!-- <div class="header-slider--item header-slider--right">
+    <div class="nav-menu" id="nav-menu--mobile">
+      <div class="menu">
+        <ul class="menu-list d-flex">
+          <li class="menu-item">
+            <a href="#services" class="menu-link text-white" id="first">Services</a>
+          </li>
+          <li class="menu-item">
+            <a href="#clients" class="menu-link text-white">Clients</a>
+          </li>
+          <li class="menu-item">
+            <a href="#benefits" class="menu-link text-white">Benefits</a>
+          </li>
+          <li class="menu-item">
+            <a href="#team" class="menu-link text-white">Team</a>
+          </li>
+          <li class="menu-item">
+            <a href="#news" class="menu-link text-white">News</a>
+          </li>
+          <li class="menu-item">
+            <a href="#contacs" class="menu-link text-white">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="header-slider">
+      <div class="container">
+        <div class="header-slider--block">
+          <div class="header-slider--left">
+            <div class="header--form">
+              <div class="header--form-top">
+                <h3 class="header--form-title text-white">Get Callback</h3>
+                <p class="header--form-subtitle text-white">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut
+                </p>
+              </div>
+              <form action="handler.php" method="post" class="header--form-content">
+                <input type="text" name="your-name" placeholder="Your name" />
+                <input type="tel" name="phone" placeholder="Your phone" />
+                <input type="email" name="email" placeholder="Your e-mail" />
+                <button type="submit" class="btn-form btn-sm-size text-white">
+                  Call me back
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="slider-control">
+            <a class="slider-prev"><img src="./images/prev-icon.svg" alt="icon" /></a>
+            <a class="slider-next"><img src="./images/next-icon.svg" alt="icon" /></a>
+          </div>
+        </div>
+        <div class="header-slider--items">
+          <div class="header-slider--item header-slider--right">
+            <p class="company-state text-white">USA, Europe, Asia</p>
+            <h1 class="company-name">
+              <span class="company-name--amp">&amp;</span>
+              Trans<br />
+              Logistic
+            </h1>
+          </div>
+
+          <!-- <div class="header-slider--item header-slider--right">
                         <p class="company-state text-white">USA, Europe, Asia</p>
                         <h1 class="company-name text-white">
                             <span class="company-name--amp">&amp;</span>
@@ -143,534 +151,463 @@
                             <span class="company-name--amp">&amp;</span>
                             Trans<br> Logistic</h1>
                     </div> -->
-          </div>
         </div>
       </div>
-    </header>
-    <!-- /HEADER -->
+    </div>
+  </header>
+  <!-- /HEADER -->
 
-    <!-- MAIN -->
-    <main class="main">
-      <!-- SERVICES -->
-      <section id="services" class="scollspy">
-        <div class="container">
-          <div class="services-items bg-white theme-shadow g-5 row m-2 m-md-0">
-            <div class="service-item col-12 col-sm-6 col-md-3">
-              <h4 class="service-title">Ground Shipping</h4>
-              <p class="service-subtitle">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam
-              </p>
-              <a class="service--learn-more">Learn more</a>
-            </div>
-            <div class="service-item col-12 col-sm-6 col-md-3">
-              <h4 class="service-title">Ground Shipping</h4>
-              <p class="service-subtitle">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam
-              </p>
-              <a class="service--learn-more">Learn more</a>
-            </div>
-            <div class="service-item col-12 col-sm-6 col-md-3">
-              <h4 class="service-title">Ground Shipping</h4>
-              <p class="service-subtitle">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam
-              </p>
-              <a class="service--learn-more">Learn more</a>
-            </div>
-            <div class="service-item col-12 col-sm-6 col-md-3">
-              <h4 class="service-title">Ground Shipping</h4>
-              <p class="service-subtitle">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam
-              </p>
-              <a class="service--learn-more">Learn more</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- /SERVICES -->
-
-      <!-- CLIENTS -->
-      <section id="clients" class="scollspy">
-        <div class="container">
-          <div class="title"><span class="title-item">Our</span> Clients</div>
-          <div class="row clients-content justify-content-between">
-            <div class="col-lg-5 col-md-12 col-12 clients-brand">
-              <div class="row clients-brand--items">
-                <div class="col-12 clients-brand--item">
-                  <div class="row">
-                    <img
-                      src="./images/client-icon1.png"
-                      class="col-4 client-img1"
-                      alt="client-icon"
-                    />
-                    <img
-                      src="./images/client-icon2.png"
-                      class="col-4 client-img2"
-                      alt="client-icon"
-                    />
-                    <img
-                      src="./images/client-icon3.png"
-                      class="col-4 client-img3"
-                      alt="client-icon"
-                    />
-                  </div>
-                </div>
-                <div class="col-12 clients-brand--item">
-                  <div class="row">
-                    <img
-                      src="./images/client-icon4.svg"
-                      class="col-4 client-img4"
-                      alt="client-icon"
-                    />
-                    <img
-                      src="./images/client-icon5.svg"
-                      class="col-4 client-img5"
-                      alt="client-icon"
-                    />
-                    <img
-                      src="./images/client-icon6.svg"
-                      class="col-4 client-img6"
-                      alt="client-icon"
-                    />
-                  </div>
-                </div>
-                <div class="col-12 clients-brand--item">
-                  <div class="row">
-                    <img
-                      src="./images/client-icon8.svg"
-                      class="col-6 client-img8"
-                      alt="client-icon"
-                    />
-                    <img
-                      src="./images/client-icon7.svg"
-                      class="col-6 client-img7"
-                      alt="client-icon"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-5 col-md-12 col-12 clients-right">
-              <div class="clients-slider">
-                <div class="clients-slider--item">
-                  <div class="client-title mb-4 d-flex align-items-center">
-                    <img
-                      src="./images/avatar.svg"
-                      alt="avatar"
-                      class="client-image"
-                    />
-                    <div class="client-name">
-                      <h6 class="client-name--item">John Smith</h6>
-                      <p class="client-name--text">FOX Hub CEO</p>
-                    </div>
-                  </div>
-                  <div class="client-paragraphy">
-                    <p class="mb-4 text-center text-lg-start">
-                      &nbsp&nbsp&nbsp&nbsp Lorem ipsum dolor sit amet,
-                      consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                      invidunt ut labore et dolore magna aliquyam erat, sed diam
-                      voluptua. At vero eos et accusam et justo duo dolores et
-                      ea rebum.
-                    </p>
-                    <p class="text-center text-lg-start">
-                      Stet clita kasd gubergren, no sea takimata sanctus est
-                      Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-                      consetetur sadipscing elitr, sed diam
-                    </p>
-                  </div>
-                </div>
-
-                <div class="clients-slider--item">
-                  <div
-                    class="client-title justify-content-md-center mb-4 d-flex align-items-center"
-                  >
-                    <img
-                      src="./images/avatar.svg"
-                      alt="avatar"
-                      class="client-image"
-                    />
-                    <div class="client-name">
-                      <h6 class="client-name--item">John Smith</h6>
-                      <p class="client-name--text">FOX Hub CEO</p>
-                    </div>
-                  </div>
-                  <div class="client-paragraphy">
-                    <p class="mb-4 text-center text-lg-start">
-                      &nbsp&nbsp&nbsp&nbsp Lorem ipsum dolor sit amet,
-                      consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                      invidunt ut labore et dolore magna aliquyam erat, sed diam
-                      voluptua. At vero eos et accusam et justo duo dolores et
-                      ea rebum.
-                    </p>
-                    <p class="text-center text-lg-start">
-                      Stet clita kasd gubergren, no sea takimata sanctus est
-                      Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-                      consetetur sadipscing elitr, sed diam
-                    </p>
-                  </div>
-                </div>
-
-                <div class="clients-slider--item">
-                  <div
-                    class="client-title justify-content-md-center mb-4 d-flex align-items-center"
-                  >
-                    <img
-                      src="./images/avatar.svg"
-                      alt="avatar"
-                      class="client-image"
-                    />
-                    <div class="client-name">
-                      <h6 class="client-name--item">John Smith</h6>
-                      <p class="client-name--text">FOX Hub CEO</p>
-                    </div>
-                  </div>
-                  <div class="client-paragraphy">
-                    <p class="mb-4 text-center text-lg-start">
-                      &nbsp&nbsp&nbsp&nbsp Lorem ipsum dolor sit amet,
-                      consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                      invidunt ut labore et dolore magna aliquyam erat, sed diam
-                      voluptua. At vero eos et accusam et justo duo dolores et
-                      ea rebum.
-                    </p>
-                    <p class="text-center text-lg-start">
-                      Stet clita kasd gubergren, no sea takimata sanctus est
-                      Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-                      consetetur sadipscing elitr, sed diam
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="client-buttons">
-            <a class="client-btn btn-sm-size">Become a client</a>
-            <a class="client-btn btn-sm-size love-btn">we love our clients</a>
-          </div>
-        </div>
-      </section>
-      <!-- /CLIENTS -->
-
-      <!-- Benefits -->
-      <section id="benefits" class="scollspy">
-        <div class="container">
-          <div class="row benefits-block justify-content-between">
-            <div class="col-auto benefits-left">
-              <div class="benefits-items">
-                <div class="benefits-item">
-                  <h5 class="benefits-title">Safety</h5>
-                  <p class="benefits-subtitle">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                    diam nonumy eirmod tempor
-                  </p>
-                </div>
-                <div class="benefits-item">
-                  <h5 class="benefits-title">High quality drivers</h5>
-                  <p class="benefits-subtitle">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                    diam nonumy eirmod tempor
-                  </p>
-                </div>
-                <div class="benefits-item">
-                  <h5 class="benefits-title">Guarantee & Support 24/7</h5>
-                  <p class="benefits-subtitle">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                    diam nonumy eirmod tempor
-                  </p>
-                </div>
-                <div class="benefits-item">
-                  <h5 class="benefits-title">Personal manager</h5>
-                  <p class="benefits-subtitle">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                    diam nonumy eirmod tempor
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-auto benefits-right">
-              <img
-                src="./images/benefits-images.jpg"
-                alt="benefits-img"
-                class="benefits-img"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- /Benefits -->
-    </main>
-
-    <!-- TEAM -->
-    <section id="team" class="scollspy">
+  <!-- MAIN -->
+  <main class="main">
+    <!-- SERVICES -->
+    <section id="services" class="scollspy">
       <div class="container">
-        <div class="title"><span class="title-item">Our</span> Team</div>
-        <div class="row team-inner">
-          <div class="col-12 col-md-4 team-card">
-            <div class="team-image--block">
-              <img
-                src="./images/team-image1.png"
-                class="team-img"
-                alt="team-image"
-              />
-            </div>
-            <h6 class="team-card--title">John Smith</h6>
-            <p class="team-card--subtitle">
-              Logistic manager - 8 years experience
+        <div class="services-items bg-white theme-shadow g-5 row m-2 m-md-0">
+          <div class="service-item col-12 col-sm-6 col-md-3">
+            <h4 class="service-title">Ground Shipping</h4>
+            <p class="service-subtitle">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+              diam nonumy eirmod tempor invidunt ut labore et dolore magna
+              aliquyam
             </p>
-            <div class="team-email--block d-flex">
-              <img src="./images/message.svg" alt="message ixon" />
-              <a href="mailto:john@centerlogistic.com"
-                >john@centerlogistic.com</a
-              >
-            </div>
-            <div class="team-card--call d-flex">
-              <img src="./images/call.svg" alt="call icon" />
-              <a href="tel:+987412512543">+987412512543</a>
-            </div>
+            <a class="service--learn-more">Learn more</a>
           </div>
-          <div class="col-12 col-md-4 team-card">
-            <div class="team-image--block">
-              <img
-                src="./images/team-image2.png"
-                class="team-img"
-                alt="team-image"
-              />
-            </div>
-            <h6 class="team-card--title">Daniel Kore</h6>
-            <p class="team-card--subtitle">Software engineer</p>
-            <div class="team-email--block d-flex">
-              <img src="./images/message.svg" alt="message ixon" />
-              <a href="mailto:daniel@centerlogistic.com"
-                >daniel@centerlogistic.com</a
-              >
-            </div>
-            <div class="team-card--call d-flex">
-              <img src="./images/call.svg" alt="call icon" />
-              <a href="tel:+987423252253">+987423252253</a>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 team-card">
-            <div class="team-image--block">
-              <img
-                src="./images/team-image3.png"
-                class="team-img"
-                alt="team-image"
-              />
-            </div>
-            <h6 class="team-card--title">Anna Filler</h6>
-            <p class="team-card--subtitle">
-              Marketing specialist - 10 years experience
+          <div class="service-item col-12 col-sm-6 col-md-3">
+            <h4 class="service-title">Ground Shipping</h4>
+            <p class="service-subtitle">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+              diam nonumy eirmod tempor invidunt ut labore et dolore magna
+              aliquyam
             </p>
-            <div class="team-email--block d-flex">
-              <img src="./images/message.svg" alt="message ixon" />
-              <a href="mailto:anna@centerlogistic.com"
-                >anna@centerlogistic.com</a
-              >
-            </div>
-            <div class="team-card--call d-flex">
-              <img src="./images/call.svg" alt="call icon" />
-              <a href="tel:+98735353456">+98735353456</a>
-            </div>
+            <a class="service--learn-more">Learn more</a>
+          </div>
+          <div class="service-item col-12 col-sm-6 col-md-3">
+            <h4 class="service-title">Ground Shipping</h4>
+            <p class="service-subtitle">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+              diam nonumy eirmod tempor invidunt ut labore et dolore magna
+              aliquyam
+            </p>
+            <a class="service--learn-more">Learn more</a>
+          </div>
+          <div class="service-item col-12 col-sm-6 col-md-3">
+            <h4 class="service-title">Ground Shipping</h4>
+            <p class="service-subtitle">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+              diam nonumy eirmod tempor invidunt ut labore et dolore magna
+              aliquyam
+            </p>
+            <a class="service--learn-more">Learn more</a>
           </div>
         </div>
       </div>
     </section>
-    <!-- /TEAM -->
+    <!-- /SERVICES -->
 
-    <!-- SECTION -->
-    <div class="section">
-      <!-- WRAP -->
-      <section id="wrap">
-        <div class="container">
-          <div class="wrap-inner">
-            <div class="wrap-content bg-white text-center theme-shadow">
-              <h4 class="wrap-title">
-                To provide our customer qualified services according the
-                international
-              </h4>
-              <p class="wrap-subtitle">
-                Book your Cargo now & Your job just got a lot easier
-              </p>
-              <div class="wrap-border">
-                <div class="wrap-border--left"></div>
-                <div class="wrap-border--right"></div>
+    <!-- CLIENTS -->
+    <section id="clients" class="scollspy">
+      <div class="container">
+        <div class="title"><span class="title-item">Our</span> Clients</div>
+        <div class="row clients-content justify-content-between">
+          <div class="col-lg-5 col-md-12 col-12 clients-brand">
+            <div class="row clients-brand--items">
+              <div class="col-12 clients-brand--item">
+                <div class="row">
+                  <img src="./images/client-icon1.png" class="col-4 client-img1" alt="client-icon" />
+                  <img src="./images/client-icon2.png" class="col-4 client-img2" alt="client-icon" />
+                  <img src="./images/client-icon3.png" class="col-4 client-img3" alt="client-icon" />
+                </div>
+              </div>
+              <div class="col-12 clients-brand--item">
+                <div class="row">
+                  <img src="./images/client-icon4.svg" class="col-4 client-img4" alt="client-icon" />
+                  <img src="./images/client-icon5.svg" class="col-4 client-img5" alt="client-icon" />
+                  <img src="./images/client-icon6.svg" class="col-4 client-img6" alt="client-icon" />
+                </div>
+              </div>
+              <div class="col-12 clients-brand--item">
+                <div class="row">
+                  <img src="./images/client-icon8.svg" class="col-6 client-img8" alt="client-icon" />
+                  <img src="./images/client-icon7.svg" class="col-6 client-img7" alt="client-icon" />
+                </div>
               </div>
             </div>
-            <a class="wrap-btn text-white btn-sm-size">Become a client</a>
-            <p class="wrap-text--after">Our mission</p>
           </div>
-        </div>
-      </section>
-      <!-- /WRAP -->
 
-      <!-- NEWS -->
-      <section id="news" class="scollspy">
-        <div class="container">
-          <div class="title">
-            <span class="title-item">Interesting</span> to read
-          </div>
-          <div class="row news-items d-flex justify-content-between">
-            <div class="col-auto col-sm-12 col-md-6 col-lg-5 news-item">
-              <h5 class="news-item--title">News title</h5>
-              <p class="news-item--subtitle">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                takimata sanctus est Lorem ipsum dolor sit amet.
-              </p>
-              <span class="news-item--date">21 March, 2019</span>
-            </div>
-            <div class="col-auto col-sm-12 col-md-6 col-lg-5 news-item">
-              <h5 class="news-item--title">News title</h5>
-              <p class="news-item--subtitle">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                takimata sanctus est Lorem ipsum dolor sit amet.
-              </p>
-              <span class="news-item--date">21 March, 2019</span>
-            </div>
-          </div>
-          <div class="news-btn text-white btn-sm-size">Visit blog</div>
-        </div>
-      </section>
-      <!-- /NEWS -->
+          <div class="col-lg-5 col-md-12 col-12 clients-right">
+            <div class="clients-slider">
+              <div class="clients-slider--item">
+                <div class="client-title justify-content-md-center justify-content-lg-start mb-4 d-flex align-items-center">
+                  <img src="./images/avatar.svg" alt="avatar" class="client-image" />
+                  <div class="client-name">
+                    <h6 class="client-name--item">John Smith</h6>
+                    <p class="client-name--text">FOX Hub CEO</p>
+                  </div>
+                </div>
+                <div class="client-paragraphy">
+                  <p class="mb-4 text-center text-lg-start">
+                    &nbsp&nbsp&nbsp&nbsp Lorem ipsum dolor sit amet,
+                    consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                    invidunt ut labore et dolore magna aliquyam erat, sed diam
+                    voluptua. At vero eos et accusam et justo duo dolores et
+                    ea rebum.
+                  </p>
+                  <p class="text-center text-lg-start">
+                    Stet clita kasd gubergren, no sea takimata sanctus est
+                    Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                    consetetur sadipscing elitr, sed diam
+                  </p>
+                </div>
+              </div>
 
-      <!-- FOOTER -->
-      <section class="footer" id="contacs" class="scollspy">
-        <div class="container">
-          <div class="footer-inner d-flex flex-column align-items-center">
-            <div class="footer-logo d-flex align-items-center">
-              <a href="./index.html"> </a>
-              <p class="footer-logo--text logo-text">CenterLogistic</p>
-            </div>
-            <ul class="footer-list d-flex">
-              <li class="footer-list--item">
-                <a href="#" class="footer-list--link">Terms & Contidions</a>
-              </li>
-              <li class="footer-list--item">
-                <a href="#" class="footer-list--link">Privacy Policy</a>
-              </li>
-              <li class="footer-list--item">
-                <a href="#" class="footer-list--link">Our blog</a>
-              </li>
-            </ul>
-            <div class="footer-item text-center">
-              <p class="footer-item--paragraphy">copyright Herosson Group</p>
-              <p class="footer-item--paragraphy">
-                Call: +999977251027 or E-mail: info@herosson.uz
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- /FOOTER -->
-    </div>
-    <!-- /SECTION -->
+              <div class="clients-slider--item">
+                <div class="client-title justify-content-md-center justify-content-lg-start mb-4 d-flex align-items-center">
+                  <img src="./images/avatar.svg" alt="avatar" class="client-image" />
+                  <div class="client-name">
+                    <h6 class="client-name--item">John Smith</h6>
+                    <p class="client-name--text">FOX Hub CEO</p>
+                  </div>
+                </div>
+                <div class="client-paragraphy">
+                  <p class="mb-4 text-center text-lg-start">
+                    &nbsp&nbsp&nbsp&nbsp Lorem ipsum dolor sit amet,
+                    consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                    invidunt ut labore et dolore magna aliquyam erat, sed diam
+                    voluptua. At vero eos et accusam et justo duo dolores et
+                    ea rebum.
+                  </p>
+                  <p class="text-center text-lg-start">
+                    Stet clita kasd gubergren, no sea takimata sanctus est
+                    Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                    consetetur sadipscing elitr, sed diam
+                  </p>
+                </div>
+              </div>
 
-    <!-- MODAL -->
-    <div class="modal-content " id="becomeClientModal">
-      <div class="modal__inner">
-        <div class="modal__header">
-          <h4 class="modal__title">Need to deliver your cargo? We can help!</h4>
-          <div class="modal__text">
-            Fill a little form and we will call you back!
+              <div class="clients-slider--item">
+                <div class="client-title justify-content-md-center justify-content-lg-start mb-4 d-flex align-items-center">
+                  <img src="./images/avatar.svg" alt="avatar" class="client-image" />
+                  <div class="client-name">
+                    <h6 class="client-name--item">John Smith</h6>
+                    <p class="client-name--text">FOX Hub CEO</p>
+                  </div>
+                </div>
+                <div class="client-paragraphy">
+                  <p class="mb-4 text-center text-lg-start">
+                    &nbsp&nbsp&nbsp&nbsp Lorem ipsum dolor sit amet,
+                    consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                    invidunt ut labore et dolore magna aliquyam erat, sed diam
+                    voluptua. At vero eos et accusam et justo duo dolores et
+                    ea rebum.
+                  </p>
+                  <p class="text-center text-lg-start">
+                    Stet clita kasd gubergren, no sea takimata sanctus est
+                    Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                    consetetur sadipscing elitr, sed diam
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <form action="handler.php" method="post" class="header--form-content" id="modal__form">
-          <input type="text" name="your-name" class="modal__input" placeholder="Your name" />
-          <input type="tel" name="phone" class="modal__input" placeholder="Your phone" />
-          <input type="email" name="email" class="modal__input" placeholder="Your e-mail" />
-          <button type="submit" class="btn-form btn-sm-size text-white">
-            Call me back
-          </button>
-        </form>
-        <div class="modal__line"></div>
-        <div class="modal-contacts">
-            <h4 class="modal-contacts--title">Our contacts</h4>
-            <ul class="modal-list">
-                <li class="modal-list--item">
-                    <a href="#">
-                        Toshkent. Labzak
-                    </a>
-                </li>
-                <li class="modal-list--item">
-                    <a href="tel:+998-97-725-10-27">
-                        Phone: +998977251027
-                    </a>
-                </li>
-                <li class="modal-list--item">
-                    <a href="mailto:info@herosson.uz">
-                        E-mail: info@herosson.uz
-                    </a>
-                </li>
-            </ul>
+
+        <div class="client-buttons">
+          <a class="client-btn btn-sm-size">Become a client</a>
+          <a class="client-btn btn-sm-size love-btn">we love our clients</a>
         </div>
-        <button type="button" class="modal__close">
-            <img src="./images/close.svg" alt="close svg">
-        </button>
+      </div>
+    </section>
+    <!-- /CLIENTS -->
+
+    <!-- Benefits -->
+    <section id="benefits" class="scollspy">
+      <div class="container">
+        <div class="row benefits-block justify-content-between">
+          <div class="col-auto benefits-left">
+            <div class="benefits-items">
+              <div class="benefits-item">
+                <h5 class="benefits-title">Safety</h5>
+                <p class="benefits-subtitle">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor
+                </p>
+              </div>
+              <div class="benefits-item">
+                <h5 class="benefits-title">High quality drivers</h5>
+                <p class="benefits-subtitle">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor
+                </p>
+              </div>
+              <div class="benefits-item">
+                <h5 class="benefits-title">Guarantee & Support 24/7</h5>
+                <p class="benefits-subtitle">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor
+                </p>
+              </div>
+              <div class="benefits-item">
+                <h5 class="benefits-title">Personal manager</h5>
+                <p class="benefits-subtitle">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto benefits-right">
+            <img src="./images/benefits-images.jpg" alt="benefits-img" class="benefits-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Benefits -->
+  </main>
+
+  <!-- TEAM -->
+  <section id="team" class="scollspy">
+    <div class="container">
+      <div class="title"><span class="title-item">Our</span> Team</div>
+      <div class="row team-inner">
+        <div class="col-12 col-md-4 team-card">
+          <div class="team-image--block">
+            <img src="./images/team-image1.png" class="team-img" alt="team-image" />
+          </div>
+          <h6 class="team-card--title">John Smith</h6>
+          <p class="team-card--subtitle">
+            Logistic manager - 8 years experience
+          </p>
+          <div class="team-email--block d-flex">
+            <img src="./images/message.svg" alt="message ixon" />
+            <a href="mailto:john@centerlogistic.com">john@centerlogistic.com</a>
+          </div>
+          <div class="team-card--call d-flex">
+            <img src="./images/call.svg" alt="call icon" />
+            <a href="tel:+987412512543">+987412512543</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 team-card">
+          <div class="team-image--block">
+            <img src="./images/team-image2.png" class="team-img" alt="team-image" />
+          </div>
+          <h6 class="team-card--title">Daniel Kore</h6>
+          <p class="team-card--subtitle">Software engineer</p>
+          <div class="team-email--block d-flex">
+            <img src="./images/message.svg" alt="message ixon" />
+            <a href="mailto:daniel@centerlogistic.com">daniel@centerlogistic.com</a>
+          </div>
+          <div class="team-card--call d-flex">
+            <img src="./images/call.svg" alt="call icon" />
+            <a href="tel:+987423252253">+987423252253</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 team-card">
+          <div class="team-image--block">
+            <img src="./images/team-image3.png" class="team-img" alt="team-image" />
+          </div>
+          <h6 class="team-card--title">Anna Filler</h6>
+          <p class="team-card--subtitle">
+            Marketing specialist - 10 years experience
+          </p>
+          <div class="team-email--block d-flex">
+            <img src="./images/message.svg" alt="message ixon" />
+            <a href="mailto:anna@centerlogistic.com">anna@centerlogistic.com</a>
+          </div>
+          <div class="team-card--call d-flex">
+            <img src="./images/call.svg" alt="call icon" />
+            <a href="tel:+98735353456">+98735353456</a>
+          </div>
+        </div>
       </div>
     </div>
+  </section>
+  <!-- /TEAM -->
 
-    <div class="modal-content " id="thanksModal">
-      <div class="modal__inner">
-        <div class="modal__header">
-          <img src="./images/thank-icon.svg" class="thankModal__icon" alt="thank-icon">
-          <h4 class="modal__title">Thanks for your request</h4>
-          <div class="modal__text">
-            We call you back as soon as possible!
+  <!-- SECTION -->
+  <div class="section">
+    <!-- WRAP -->
+    <section id="wrap">
+      <div class="container">
+        <div class="wrap-inner">
+          <div class="wrap-content bg-white text-center theme-shadow">
+            <h4 class="wrap-title">
+              To provide our customer qualified services according the
+              international
+            </h4>
+            <p class="wrap-subtitle">
+              Book your Cargo now & Your job just got a lot easier
+            </p>
+            <div class="wrap-border">
+              <div class="wrap-border--left"></div>
+              <div class="wrap-border--right"></div>
+            </div>
+          </div>
+          <a class="wrap-btn text-white btn-sm-size">Become a client</a>
+          <p class="wrap-text--after">Our mission</p>
+        </div>
+      </div>
+    </section>
+    <!-- /WRAP -->
+
+    <!-- NEWS -->
+    <section id="news" class="scollspy">
+      <div class="container">
+        <div class="title">
+          <span class="title-item">Interesting</span> to read
+        </div>
+        <div class="row news-items d-flex justify-content-between">
+          <div class="col-auto col-sm-12 col-md-6 col-lg-5 news-item">
+            <h5 class="news-item--title">News title</h5>
+            <p class="news-item--subtitle">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+              diam nonumy eirmod tempor invidunt ut labore et dolore magna
+              aliquyam erat, sed diam voluptua. At vero eos et accusam et
+              justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+              takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+            <span class="news-item--date">21 March, 2019</span>
+          </div>
+          <div class="col-auto col-sm-12 col-md-6 col-lg-5 news-item">
+            <h5 class="news-item--title">News title</h5>
+            <p class="news-item--subtitle">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+              diam nonumy eirmod tempor invidunt ut labore et dolore magna
+              aliquyam erat, sed diam voluptua. At vero eos et accusam et
+              justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+              takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+            <span class="news-item--date">21 March, 2019</span>
           </div>
         </div>
-        <div class="modal__line"></div>
-        <div class="modal-contacts">
-            <h4 class="modal-contacts--title">Our contacts</h4>
-            <ul class="modal-list">
-                <li class="modal-list--item">
-                    <a href="#">
-                        Toshkent. Labzak
-                    </a>
-                </li>
-                <li class="modal-list--item">
-                    <a href="tel:+998-97-725-10-27">
-                        Phone: +998977251027
-                    </a>
-                </li>
-                <li class="modal-list--item">
-                    <a href="mailto:info@herosson.uz">
-                        E-mail: info@herosson.uz
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <button type="button" class="modal__close">
-            <img src="./images/close.svg" alt="close svg">
-        </button>
+        <div class="news-btn text-white btn-sm-size">Visit blog</div>
       </div>
-    </div>
-    <!-- /MODAL -->
+    </section>
+    <!-- /NEWS -->
 
-    <!-- Scroll TO Top - open -->
-    <div class="scroll-to-top">
-      <a href="#" class="gotobtn"
-        ><img class="arrow_up" src="./images/arrow-up.svg" alt="arrow-up"
-      /></a>
-    </div>
-    <!-- Scroll TO Top - close -->
+    <!-- FOOTER -->
+    <section class="footer" id="contacs" class="scollspy">
+      <div class="container">
+        <div class="footer-inner d-flex flex-column align-items-center">
+          <div class="footer-logo d-flex align-items-center">
+            <a href="./index.html"> </a>
+            <p class="footer-logo--text logo-text">CenterLogistic</p>
+          </div>
+          <ul class="footer-list d-flex">
+            <li class="footer-list--item">
+              <a href="#" class="footer-list--link">Terms & Contidions</a>
+            </li>
+            <li class="footer-list--item">
+              <a href="#" class="footer-list--link">Privacy Policy</a>
+            </li>
+            <li class="footer-list--item">
+              <a href="#" class="footer-list--link">Our blog</a>
+            </li>
+          </ul>
+          <div class="footer-item text-center">
+            <p class="footer-item--paragraphy">copyright Herosson Group</p>
+            <p class="footer-item--paragraphy">
+              Call: +999977251027 or E-mail: info@herosson.uz
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /FOOTER -->
+  </div>
+  <!-- /SECTION -->
 
-    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
-    <script src="libs/jquery.js"></script>
-    <script src="libs/slick-1.8.1/slick/slick.js"></script>
-    <script src="libs/bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+  <!-- MODAL -->
+  <div class="modal-content " id="becomeClientModal">
+    <div class="modal__inner">
+      <div class="modal__header">
+        <h4 class="modal__title">Need to deliver your cargo? We can help!</h4>
+        <div class="modal__text">
+          Fill a little form and we will call you back!
+        </div>
+      </div>
+      <form action="handler.php" method="post" class="header--form-content" id="modal__form">
+        <input type="text" name="your-name" class="modal__input" placeholder="Your name" />
+        <input type="tel" name="phone" class="modal__input" placeholder="Your phone" />
+        <input type="email" name="email" class="modal__input" placeholder="Your e-mail" />
+        <button type="submit" class="btn-form btn-sm-size text-white">
+          Call me back
+        </button>
+      </form>
+      <div class="modal__line"></div>
+      <div class="modal-contacts">
+        <h4 class="modal-contacts--title">Our contacts</h4>
+        <ul class="modal-list">
+          <li class="modal-list--item">
+            <a href="#">
+              Toshkent. Labzak
+            </a>
+          </li>
+          <li class="modal-list--item">
+            <a href="tel:+998-97-725-10-27">
+              Phone: +998977251027
+            </a>
+          </li>
+          <li class="modal-list--item">
+            <a href="mailto:info@herosson.uz">
+              E-mail: info@herosson.uz
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button type="button" class="modal__close">
+        <img src="./images/close.svg" alt="close svg">
+      </button>
+    </div>
+  </div>
+
+  <div class="modal-content " id="thanksModal">
+    <div class="modal__inner">
+      <div class="modal__header">
+        <img src="./images/thank-icon.svg" class="thankModal__icon" alt="thank-icon">
+        <h4 class="modal__title">Thanks for your request</h4>
+        <div class="modal__text">
+          We call you back as soon as possible!
+        </div>
+      </div>
+      <div class="modal__line"></div>
+      <div class="modal-contacts">
+        <h4 class="modal-contacts--title">Our contacts</h4>
+        <ul class="modal-list">
+          <li class="modal-list--item">
+            <a href="#">
+              Toshkent. Labzak
+            </a>
+          </li>
+          <li class="modal-list--item">
+            <a href="tel:+998-97-725-10-27">
+              Phone: +998977251027
+            </a>
+          </li>
+          <li class="modal-list--item">
+            <a href="mailto:info@herosson.uz">
+              E-mail: info@herosson.uz
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button type="button" class="modal__close">
+        <img src="./images/close.svg" alt="close svg">
+      </button>
+    </div>
+  </div>
+  <!-- /MODAL -->
+
+  <!-- Scroll TO Top - open -->
+  <div class="scroll-to-top">
+    <a href="#" class="gotobtn"><img class="arrow_up" src="./images/arrow-up.svg" alt="arrow-up" /></a>
+  </div>
+  <!-- Scroll TO Top - close -->
+
+  <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+  <script src="libs/jquery.js"></script>
+  <script src="libs/slick-1.8.1/slick/slick.js"></script>
+  <script src="libs/bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
