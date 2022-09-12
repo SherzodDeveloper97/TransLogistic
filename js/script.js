@@ -72,17 +72,43 @@ window.addEventListener("scroll", () => {
 /* Modal - open */
 
 if(document.querySelector('.modal__btn')){
-    const modalBtn = document.querySelectorAll('.modal__btn');
+    const modalBtns = document.getElementsByClassName('modal__btn');
     const modalWindow = document.getElementById('becomeClientModal');
+    const BODY = document.querySelector('body');
+    const btnsFormSubmit = document.getElementsByClassName('btn-form');
+    const modalWindowTwo = document.getElementById('thanksModal');
+    const inputValue = document.querySelector('input').value;
 
-    // modalBtn.addEventListener('click', () => {
-    //     modalWindow.classList.add("show");
-    // });
-    modalBtn.foreach(d => {d.addEventListener('click', () =>{
-        modalWindow.classList.add("show")
+    console.log(inputValue);
+    
 
+    for(const modalBtn of modalBtns){
+        modalBtn.addEventListener('click', () => {
+            modalWindow.classList.add('show');
+            BODY.classList.add('no-scroll');
+        })
+    };
+    
+    const modalCloseBtns = document.getElementsByClassName('modal__close');
+    
+    for(const modalCloseBtn of modalCloseBtns){
+        modalCloseBtn.addEventListener('click', () => {
+            modalWindow.classList.remove('show');
+            BODY.classList.remove('no-scroll');
+            modalWindowTwo.classList.remove('show');
+        })
     }
-    )})
+
+    for(const btnFormSubmit of btnsFormSubmit){
+        btnFormSubmit.addEventListener('click', () => {
+            modalWindowTwo.classList.add('show');
+            modalWindow.classList.remove('show');
+        })
+    }
+
 }
+
+
+
 
 /* Modal - close */
