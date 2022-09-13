@@ -71,15 +71,16 @@ window.addEventListener("scroll", () => {
 
 /* Modal - open */
 
-if(document.querySelector('.modal__btn')){
+if(typeof document.querySelector('.modal__btn') !== 'undefined'){
     const modalBtns = document.getElementsByClassName('modal__btn');
     const modalWindow = document.getElementById('becomeClientModal');
     const BODY = document.querySelector('body');
     const btnsFormSubmit = document.getElementsByClassName('btn-form');
     const modalWindowTwo = document.getElementById('thanksModal');
-    const inputValue = document.querySelector('input').value;
-
-    console.log(inputValue);
+    const inputValueName = document.getElementsByClassName('your__name');
+    const inputValueNumber = document.getElementsByClassName('phone__number');
+    const inputValueEmail = document.getElementsByClassName('your__email');
+    
     
 
     for(const modalBtn of modalBtns){
@@ -99,12 +100,24 @@ if(document.querySelector('.modal__btn')){
         })
     }
 
-    for(const btnFormSubmit of btnsFormSubmit){
-        btnFormSubmit.addEventListener('click', () => {
-            modalWindowTwo.classList.add('show');
-            modalWindow.classList.remove('show');
+    const formElements = document.getElementsByClassName('header--form-content');
+
+    for(const formElement of formElements){
+        formElement.addEventListener('submit', (e) => {
+            if((inputValueName.value !== '' || inputValueName.value !== null) && (inputValueNumber.value !== '' || inputValueNumber.value !== null) && (inputValueEmail.value !== '' || inputValueEmail.value !== null)){
+
+                for(const btnFormSubmit of btnsFormSubmit){
+                    btnFormSubmit.addEventListener('click', () => {
+                        modalWindowTwo.classList.add('show');
+                        modalWindow.classList.remove('show');
+                    })
+                }
+
+            }
         })
     }
+
+    
 
 }
 

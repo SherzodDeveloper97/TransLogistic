@@ -882,10 +882,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    display: none;
+    /* display: none; */
+    transform: translateY(-44.5%) scale(0);
+    -webkit-transform: translateY(-44.5%) scale(0);
+    -moz-transform: translateY(-44.5%) scale(0);
+    -ms-transform: translateY(-44.5%) scale(0);
+    -o-transform: translateY(-44.5%) scale(0);
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
 }
 .modal-content.show{
     display: flex;
+    transform: translateY(0%) scale(100%);
+    -webkit-transform: translateY(0%) scale(100%);
+    -moz-transform: translateY(0%) scale(100%);
+    -ms-transform: translateY(0%) scale(100%);
+    -o-transform: translateY(0%) scale(100%);
 }
 .modal__inner {
     width: 400px;
